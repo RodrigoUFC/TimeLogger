@@ -13,9 +13,13 @@ int main()
     unsigned short minutes = 0;
     unsigned short hour_old = 0;
     unsigned short minutes_old = 0;
-    unsigned int remainingTime = 8*60;
+    unsigned int remainingTime = 0;
 
     cout << "Hello! Please enter the time in the 24h format." << endl;
+
+    cout << "Enter the duration of you shift in hours: ";
+    cin >> remainingTime;
+    remainingTime = remainingTime*60;
 
     while(option != 'e'){
         cout << "Type 'a' to log a new time. Type 'e' to end session: ";
